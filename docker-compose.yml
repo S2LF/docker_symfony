@@ -36,6 +36,7 @@ services:
 
   www:
     build: php
+    user: '1000:1000'
     container_name: www_docker_symfony
     ports :
       - "8741:80"
